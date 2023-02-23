@@ -41,4 +41,9 @@ class AuthController extends Controller
             'jwt' => $jwt
         ])->withCookie($cookie);
     }
+
+    public function user(Request $request)
+    {
+        return new UserResource($request->user());
+    }
 }
