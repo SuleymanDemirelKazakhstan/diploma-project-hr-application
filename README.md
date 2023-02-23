@@ -10,7 +10,7 @@ Suleyman Demirel University, Kaskelen, 2023
 + **Murat Tinal** (*190103048*)- Business Analyst
 
 ## Project description
-Web application for Suleyman Demirel University workers. Worker will have own account and 
+Web application for Suleyman Demirel University workers. My sdu portal for students, but this site is for workers. Worker has own account and follows it.
 Main features: 
 - getting official docs (revenues, info about vacation and etc.)
 - personal records of workers (how many days worked, how many days left for vacation)
