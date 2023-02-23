@@ -20,8 +20,8 @@ Main features:
 *will be updated*
 
 ## Technologies
-Backend: Laravel
-Frontend: VueJS
+- Backend: Laravel
+- Frontend: VueJS
 
 ## Goals
 - Optimization of HR processes and resources
