@@ -1,4 +1,5 @@
-# CSS 489 Diploma Preparation
+# HR SDU application 
+Project made for **CSS 489 Diploma Preparation**
 ## Team members
 + **Nurkamal ** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
 + **Symbat Turzhanova** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
