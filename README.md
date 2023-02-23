@@ -1,5 +1,6 @@
 # HR SDU application 
 Project made for **CSS 489 Diploma Preparation** course
+
 Suleyman Demirel University, Kaskelen, 2023
 ## Team members
 + **Nurmukhamed Nurkamal** (*190107003*)- Backend Developer 
