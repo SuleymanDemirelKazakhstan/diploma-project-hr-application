@@ -17,7 +17,8 @@ Main features:
 - registration of log book
 - integration with government portal
 - FAQ and instructions
-*will be updated*
+
+- *will be updated*
 
 ## Technologies
 - Backend: Laravel
