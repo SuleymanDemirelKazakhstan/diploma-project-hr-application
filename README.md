@@ -1,5 +1,5 @@
 # HR SDU application 
-Project made for **CSS 489 Diploma Preparation** course
+Web development project made for **CSS 489 Diploma Preparation** course
 
 Suleyman Demirel University, Kaskelen, 2023
 ## Team members
@@ -15,10 +15,10 @@ This project is yet-another clone of Instagram
 ## Alternatives / Market research
 | Research alternatives
 
-## Goals
 
 ## Technologies
-In our project we use **Laravel**, **VueJS**
+Backend: Laravel
+Frontend: VueJS
 
 ## Pages / Activities 
 We will have following pages:
@@ -33,6 +33,7 @@ We will have following pages:
 * What are the problems it will solve?
 * How will it streamline or improve the current process or facilitate a new process?
 * What is the product vision?
+- Optimization of HR processes and resources
 
 ## User Personas
 *Write description of user personas here*  
