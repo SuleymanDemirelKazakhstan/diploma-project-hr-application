@@ -1,7 +1,10 @@
-# CSS 410 Research tools and methods
+# CSS 489 Diploma Preparation
 ## Team members
-+ **Jet Lee** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
-+ **Jacky Chan** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
++ **Nurkamal ** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
++ **Symbat Turzhanova** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
++ **Takhmina Kalimova** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
++ **Olzhas Samatov** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
++ **Murat Tinal** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
 
 ## Project
 This project is yet-another clone of Instagram
