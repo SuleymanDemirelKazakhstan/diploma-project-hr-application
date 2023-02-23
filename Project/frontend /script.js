@@ -3,8 +3,6 @@ const container = document.querySelector(".container"),
   pwFields = document.querySelectorAll(".password"),
   signUp = document.querySelector(".signup-link"),
   login = document.querySelector(".login-link");
-login.innerHTML = "test";
-console.log(login.innerHTML);
 
 // js code to show/hide password
 signUp.addEventListener("click", () => {
