@@ -9,51 +9,20 @@ Suleyman Demirel University, Kaskelen, 2023
 + **Olzhas Samatov** (*190103360*) - Product Manager
 + **Murat Tinal** (*190103048*)- Business Analyst
 
-## Project
-This project is yet-another clone of Instagram
-
-## Alternatives / Market research
-| Research alternatives
-
+## Project description
+Web application for Suleyman Demirel University workers. Worker will have own account and 
+Main features: 
+- getting official docs (revenues, info about vacation and etc.)
+- personal records of workers (how many days worked, how many days left for vacation)
+- registration of log book
+- integration with government portal
+- FAQ and instructions
+*will be updated*
 
 ## Technologies
 Backend: Laravel
 Frontend: VueJS
 
-## Pages / Activities 
-We will have following pages:
-- Latest posts of friends
-- Posts from location of user
-- Take a photo page
-- Personal page
-- Settings page
-
 ## Goals
-* What is the purpose of this project?
-* What are the problems it will solve?
-* How will it streamline or improve the current process or facilitate a new process?
-* What is the product vision?
 - Optimization of HR processes and resources
-
-## User Personas
-*Write description of user personas here*  
-
-## User stories
-
-*Write your user stories here*
-
-## Sitemap, Page descriptions
-
-*Display sitemap here*
-
-## Non-Functional requirements
-*Write non-functional requirements*
-
-## Risks
-*What are the risks?*
-
-## Mockups, Wireframes
-*Put here images of your wireframes*
-
-## Future iterations
-*Write your future iterations*
+- Automize HR field at university
