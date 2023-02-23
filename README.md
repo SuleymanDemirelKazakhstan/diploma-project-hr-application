@@ -1,11 +1,12 @@
 # HR SDU application 
-Project made for **CSS 489 Diploma Preparation**
+Project made for **CSS 489 Diploma Preparation** course
+Suleyman Demirel University, Kaskelen, 2023
 ## Team members
-+ **Nurkamal ** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
-+ **Symbat Turzhanova** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
-+ **Takhmina Kalimova** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
-+ **Olzhas Samatov** (*180100013*) - Frontend Developer (GitHub account: *jackychan*)
-+ **Murat Tinal** (*180100012*)- Backend Developer (GitHub account: *jetlee*)
++ **Nurmukhamed Nurkamal** (*190107003*)- Backend Developer 
++ **Symbat Turzhanova** (*190107089*) - Frontend Developer 
++ **Takhmina Kalimova** (*190107043*)- UI/UX designer
++ **Olzhas Samatov** (*190103360*) - Product Manager
++ **Murat Tinal** (*190103048*)- Business Analyst
 
 ## Project
 This project is yet-another clone of Instagram
