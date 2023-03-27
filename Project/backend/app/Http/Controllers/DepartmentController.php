@@ -15,8 +15,7 @@ class DepartmentController extends Controller
      */
     public function index(): Response
     {
-        $departments = Department::all();
-        return \response($departments, Response::HTTP_OK);
+        //
     }
 
     /**
