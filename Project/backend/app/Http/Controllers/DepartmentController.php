@@ -5,11 +5,19 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreDepartmentRequest;
 use App\Http\Requests\UpdateDepartmentRequest;
 use App\Models\Department;
+use App\Repositories\DepartmentRepository;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 
 class DepartmentController extends Controller
 {
+    protected $repository;
+
+    public function __construct(DepartmentRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
     /**
      * Display a listing of the resource.
      */
