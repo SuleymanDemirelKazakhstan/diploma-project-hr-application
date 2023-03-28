@@ -6,6 +6,7 @@ use App\Http\Requests\StoreDepartmentRequest;
 use App\Http\Requests\UpdateDepartmentRequest;
 use App\Models\Department;
 use App\Repositories\DepartmentRepository;
+use App\Repositories\Interfaces\DepartmentRepositoryInterface;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 
@@ -13,7 +14,7 @@ class DepartmentController extends Controller
 {
     protected $repository;
 
-    public function __construct(DepartmentRepository $repository)
+    public function __construct(DepartmentRepositoryInterface $repository)
     {
         $this->repository = $repository;
     }
@@ -23,7 +24,7 @@ class DepartmentController extends Controller
      */
     public function index(): Response
     {
-        //
+        return \response($this->repository->getAll(), Response::HTTP_OK);
     }
 
     /**
@@ -37,9 +38,9 @@ class DepartmentController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreDepartmentRequest $request): RedirectResponse
+    public function store(StoreDepartmentRequest $request): Response
     {
-        //
+        return \response($this->repository->create($request->all()), Response::HTTP_CREATED);
     }
 
     /**

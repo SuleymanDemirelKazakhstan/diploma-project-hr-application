@@ -2,20 +2,21 @@
 
 namespace App\Repositories;
 
-use App\Repositories\Interfaces\RepositoryInterface;
+use App\Http\Resources\DepartmentResource;
+use App\Repositories\Interfaces\DepartmentRepositoryInterface;
 use App\Models\Department;
 
-class DepartmentRepository implements RepositoryInterface
+class DepartmentRepository implements DepartmentRepositoryInterface
 {
 
     public function getAll()
     {
-        return Department::all();
+        return DepartmentResource::collection(Department::all());
     }
 
     public function getById($id)
     {
-        return Department::findOrFail($id);
+        return new DepartmentResource(Department::findOrFail($id));
     }
 
     public function create(array $attributes)
@@ -29,7 +30,7 @@ class DepartmentRepository implements RepositoryInterface
 
         $department->update($attributes);
 
-        return $department;
+        return new DepartmentResource($department);
     }
 
     public function delete($id)
