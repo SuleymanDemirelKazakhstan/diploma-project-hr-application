@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\DepartmentController;
 use \App\Http\Controllers\PositionController;
+use \App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,11 @@ Route::middleware('auth:sanctum')->group(function () {
     // <-----POSITIONS----->
     Route::get('positions', [PositionController::class, 'index']);
     Route::get('positions/{position}', [PositionController::class, 'show']);
+
+    // <-----EMPLOYEES----->
+    Route::get('employees', [EmployeeController::class, 'index']);
+    Route::post('employees', [EmployeeController::class, 'store']);
+    Route::get('employees/{employee}', [EmployeeController::class, 'show']);
+    Route::put('employees/{employee}', [EmployeeController::class, 'update']);
+    Route::delete('employees/{employee}', [EmployeeController::class, 'destroy']);
 });
