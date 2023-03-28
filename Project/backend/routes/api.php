@@ -3,6 +3,8 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\DepartmentController;
+use \App\Http\Controllers\PositionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,13 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
-//    Route::get('user', [AuthController::class, 'user']);
-    Route::get('departments', [\App\Http\Controllers\DepartmentController::class, 'index']);
-    Route::get('departments/{department}', [\App\Http\Controllers\DepartmentController::class, 'show']);
-    Route::put('departments/{department}', [\App\Http\Controllers\DepartmentController::class, 'update']);
-    Route::delete('departments/{department}', [\App\Http\Controllers\DepartmentController::class, 'destroy']);
+    // <-----DEPARTMENTS----->
+    Route::get('departments', [DepartmentController::class, 'index']);
+    Route::get('departments/{department}', [DepartmentController::class, 'show']);
+    Route::put('departments/{department}', [DepartmentController::class, 'update']);
+    Route::delete('departments/{department}', [DepartmentController::class, 'destroy']);
+
+    // <-----POSITIONS----->
+    Route::get('positions', [PositionController::class, 'index']);
+    Route::get('positions/{position}', [PositionController::class, 'show']);
 });
