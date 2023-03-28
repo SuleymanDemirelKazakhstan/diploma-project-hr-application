@@ -20,6 +20,7 @@ class Employee extends Model
         'phone_number',
         'salary',
         'join_date',
+        'iin'
     ];
 
     public function user()

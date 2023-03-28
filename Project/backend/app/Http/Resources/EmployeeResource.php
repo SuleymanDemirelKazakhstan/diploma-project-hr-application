@@ -25,6 +25,7 @@ class EmployeeResource extends JsonResource
             'join_date' => $this->join_date,
             'department' => new DepartmentResource($this->whenLoaded('department')),
             'position' => new PositionResource($this->whenLoaded('position')),
+            'iin' => $this->iin
         ];
     }
 }

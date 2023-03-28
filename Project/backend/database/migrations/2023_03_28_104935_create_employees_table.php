@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->unique();
             $table->unsignedBigInteger('department_id')->nullable();
             $table->unsignedBigInteger('position_id');
             $table->string('firstname');
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->dateTime('join_date');
             $table->string('phone_number')->nullable();
             $table->string('image')->nullable();
+            $table->string('iin', 12)->nullable();
             $table->timestamps();
         });
     }

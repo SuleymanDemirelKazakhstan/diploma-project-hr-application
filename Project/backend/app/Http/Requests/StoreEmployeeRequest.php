@@ -28,7 +28,8 @@ class StoreEmployeeRequest extends FormRequest
             'middlename' => 'required',
             'salary' => 'required',
             'join_date' => 'required',
-            'position_id' => 'required'
+            'position_id' => 'required',
+            'iin' => 'required'
         ];
     }
 }
