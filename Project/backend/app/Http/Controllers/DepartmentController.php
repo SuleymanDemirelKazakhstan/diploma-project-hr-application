@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreDepartmentRequest;
 use App\Http\Requests\UpdateDepartmentRequest;
+use App\Http\Resources\DepartmentResource;
 use App\Models\Department;
 use App\Repositories\DepartmentRepository;
 use App\Repositories\Interfaces\DepartmentRepositoryInterface;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
+use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class DepartmentController extends Controller
 {
@@ -27,13 +29,6 @@ class DepartmentController extends Controller
         return \response($this->repository->getAll(), Response::HTTP_OK);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create(): Response
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -48,30 +43,23 @@ class DepartmentController extends Controller
      */
     public function show(Department $department): Response
     {
-        //
+        return \response(new DepartmentResource($department), Response::HTTP_OK);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Department $department): Response
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDepartmentRequest $request, Department $department): RedirectResponse
+    public function update(UpdateDepartmentRequest $request, Department $department): Response
     {
-        //
+        return \response($this->repository->update($department->id, $request->all()), Response::HTTP_ACCEPTED);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Department $department): RedirectResponse
+    public function destroy(Department $department): Response
     {
-        //
+        return \response($this->repository->delete($department->id), Response::HTTP_NO_CONTENT);
     }
 }

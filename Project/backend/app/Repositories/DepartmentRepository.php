@@ -39,6 +39,6 @@ class DepartmentRepository implements DepartmentRepositoryInterface
 
         $department->delete();
 
-        return $department;
+        return null;
     }
 }
