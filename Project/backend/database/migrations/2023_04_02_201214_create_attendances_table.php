@@ -20,6 +20,8 @@ return new class extends Migration
             $table->time('break');
             $table->string('overtime');
             $table->timestamps();
+
+            $table->foreign('employee_id')->references('id')->on('users');
         });
     }
 
