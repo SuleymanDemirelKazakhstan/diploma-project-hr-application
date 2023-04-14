@@ -7,6 +7,7 @@ use \App\Http\Controllers\DepartmentController;
 use \App\Http\Controllers\PositionController;
 use \App\Http\Controllers\EmployeeController;
 use \App\Http\Controllers\AttendanceController;
+use \App\Http\Controllers\HolidayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +44,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // <-----ATTENDANCE----->
     Route::get('attendances', [AttendanceController::class, 'index']);
+
+
+    // <-----HOLIDAY----->
+    Route::get('holidays', [HolidayController::class, 'index']);
+    Route::post('holidays', [HolidayController::class, 'store']);
+    Route::put('holidays/{holiday}', [HolidayController::class, 'update']);
+    Route::delete('holidays/{holiday}', [HolidayController::class, 'destroy']);
 });
