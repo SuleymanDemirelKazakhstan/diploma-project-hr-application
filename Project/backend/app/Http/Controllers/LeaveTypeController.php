@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\LeaveTypeResource;
 use App\Models\LeaveType;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
@@ -13,7 +14,7 @@ class LeaveTypeController extends Controller
      */
     public function index(): Response
     {
-        //
+        return \response(LeaveTypeResource::collection(LeaveType::all()));
     }
 
 

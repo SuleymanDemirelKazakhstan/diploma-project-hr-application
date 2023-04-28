@@ -8,6 +8,7 @@ use \App\Http\Controllers\PositionController;
 use \App\Http\Controllers\EmployeeController;
 use \App\Http\Controllers\AttendanceController;
 use \App\Http\Controllers\HolidayController;
+use \App\Http\Controllers\LeaveTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,4 +52,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('holidays', [HolidayController::class, 'store']);
     Route::put('holidays/{holiday}', [HolidayController::class, 'update']);
     Route::delete('holidays/{holiday}', [HolidayController::class, 'destroy']);
+
+
+    // <-----LEAVE TYPES----->
+    Route::get('leave-types', [LeaveTypeController::class, 'index']);
 });
