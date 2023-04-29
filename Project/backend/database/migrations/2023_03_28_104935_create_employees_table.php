@@ -25,6 +25,10 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('iin', 12)->nullable();
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->foreign('position_id')->references('id')->on('positions');
         });
     }
 

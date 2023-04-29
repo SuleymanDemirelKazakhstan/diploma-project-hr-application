@@ -13,4 +13,9 @@ class LeaveType extends Model
         'name',
         'description'
     ];
+
+    public function leaves()
+    {
+        return $this->hasMany(Leave::class);
+    }
 }
