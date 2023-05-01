@@ -1,5 +1,9 @@
 # API Documentation
 
+| Php версия | База данных |
+|------------|-------------|
+| 8.1.0      | PostgreSQL  |
+
 ## Authentication
 
 To use all this routes, you should be logged in. First, you need to register into the system:
