@@ -11,7 +11,7 @@ class StoreLeaveRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,9 @@ class StoreLeaveRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'leave_type_id' => 'required',
+            'from_date' => 'required|date',
+            'to_date' => 'required|date|after_or_equal:start_date',
         ];
     }
 }

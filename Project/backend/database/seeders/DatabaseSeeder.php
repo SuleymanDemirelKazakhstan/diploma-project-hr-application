@@ -20,7 +20,10 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call(
-            LeaveTypeSeeder::class
+            [
+                LeaveTypeSeeder::class,
+                PositionSeeder::class,
+            ]
         );
     }
 }

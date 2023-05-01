@@ -9,6 +9,7 @@ use \App\Http\Controllers\EmployeeController;
 use \App\Http\Controllers\AttendanceController;
 use \App\Http\Controllers\HolidayController;
 use \App\Http\Controllers\LeaveTypeController;
+use \App\Http\Controllers\LeaveController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('employees/{employee}', [EmployeeController::class, 'show']);
     Route::get('employees/{employee}/attendance', [AttendanceController::class, 'show']);
     Route::post('employees/{employee}/attendance', [AttendanceController::class, 'store']);
+    Route::get('employees/{employee}/leaves', [LeaveController::class, 'employeeLeaves']);
+    Route::post('employees/{employee}/leaves', [LeaveController::class, 'store']);
     Route::put('employees/{employee}', [EmployeeController::class, 'update']);
     Route::delete('employees/{employee}', [EmployeeController::class, 'destroy']);
 
@@ -56,4 +59,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // <-----LEAVE TYPES----->
     Route::get('leave-types', [LeaveTypeController::class, 'index']);
+
+    // <-----LEAVES----->
+    Route::get('leaves', [LeaveController::class, 'index']);
 });
