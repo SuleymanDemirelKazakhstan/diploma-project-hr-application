@@ -6,23 +6,25 @@ Suleyman Demirel University, Kaskelen, 2023
 + **Nurmukhamed Nurkamal** (*190107003*)- Backend Developer 
 + **Symbat Turzhanova** (*190107089*) - Frontend Developer 
 + **Takhmina Kalimova** (*190107043*)- UI/UX designer
-+ **Olzhas Samatov** (*190103360*) - Product Manager
++ **Olzhas Samatov** (*190103360*) - Project Manager
 + **Murat Tinal** (*190103048*)- Business Analyst
 
 ## Project description
 Web application for Suleyman Demirel University workers. My sdu portal for students, but this site is for workers. Worker has own account and follows it.
 Main features: 
-- getting official docs (revenues, info about vacation and etc.)
 - personal records of workers (how many days worked, how many days left for vacation)
-- registration of log book
-- integration with government portal
+- holidays
+- attendance
 - FAQ and instructions
 
 - *will be updated*
 
 ## Technologies
 - Backend: Laravel
-- Frontend: VueJS
+- Frontend: 
+1. Laravel Blade
+2. Bootstrap (CSS library), SASS
+3. Basic JavaScript with AJAX requests
 
 ## Goals
 - Optimization of HR processes and resources
